@@ -1,0 +1,20 @@
+{
+  "name": "ifood-1",
+  "version": "1.0.0",
+  "description": "desafio ifood clima + spotify",
+  "main": "index.js",
+  "scripts": {
+    "start": "pm2 start ./scr/resourceServer.js --watch --no-daemon ",
+    "startAuth": "pm2 start ./scr/authServer.js --watch --no-daemon "
+  },
+  "author": "joaovitor7",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.11",
+    "pm2": "^4.5.0",
+    "request": "^2.88.2"
+  }
+}

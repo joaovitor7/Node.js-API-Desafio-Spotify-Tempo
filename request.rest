@@ -1,0 +1,32 @@
+GET http://localhost:3000/?address=Carpina
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGllbnRJZCI6IjVmYjZmMTAxZjhkMTg0ZGQ2NDQ2ZWJlNzljMjk4MDBlIiwiaWF0IjoxNjA0NjE4Mjg4LCJleHAiOjE2MDQ2MTg0MDh9.Jbk8Hmf8I3WEZ1rgdJobBsy49DUNKhOrpGC2z9e0sUQ
+###
+
+DELETE http://localhost:4000/logout 
+Content-Type: application/json
+
+{
+"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSmltIiwiaWF0IjoxNTY4NzU5OTIyfQ.RT6wszuCeFLwC_6ksmNMIELxiC5s-uRivfRxyZof5ag"
+}
+
+###
+
+POST http://localhost:4000/token 
+Content-Type: application/json
+
+{
+"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSmltIiwiaWF0IjoxNTY4NzU5OTIyfQ.RT6wszuCeFLwC_6ksmNMIELxiC5s-uRivfRxyZof5ag"
+}
+
+###
+POST http://localhost:4000/login 
+Content-Type: application/json
+
+{
+"clientId": "5fb6f101f8d184dd6446ebe79c29800e"
+}
+
+###
+
+GET http://localhost:3000/?lon=-34.8813&lat=-8.05428
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGllbnRJZCI6IjVmYjZmMTAxZjhkMTg0ZGQ2NDQ2ZWJlNzljMjk4MDBlIiwiaWF0IjoxNjA0NjE4Mjg4LCJleHAiOjE2MDQ2MTg0MDh9.Jbk8Hmf8I3WEZ1rgdJobBsy49DUNKhOrpGC2z9e0sUQ

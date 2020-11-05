@@ -1,0 +1,36 @@
+version: "3.8"
+services:
+  authServer:
+    image: node:latest
+    container_name: authServer
+    env_file:
+     - .env
+    ports:
+      - ${SERVER_PORT_AUTH}:${SERVER_PORT_AUTH}
+    volumes:
+      - .:/usr/src/app
+    working_dir: /usr/src/app
+    command: npm run startAuth
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "5"
+  
+  resourceServer:
+    image: node:latest
+    container_name: resourceServer
+    env_file:
+     - .env
+    ports:
+      - ${SERVER_PORT_RESOURCE}:${SERVER_PORT_RESOURCE}
+    volumes:
+      - .:/usr/src/app
+    working_dir: /usr/src/app
+    command: npm run start
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "5"
+  
