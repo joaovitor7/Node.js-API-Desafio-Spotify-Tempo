@@ -56,7 +56,7 @@ const getPlaylistIdByTemperature = (temperature) => {
         rock: '01zzqHy5rv189lOqeLJgl9'
     } 
     
-     if (temperature > 30){
+     if (temperature >= 30){
         return playlistId.party
      } else if (temperature >= 15 && temperature < 30) {
         return playlistId.pop
