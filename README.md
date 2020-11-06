@@ -1,11 +1,6 @@
 # Node API Desafio Spotify + Tempo
 > Este projeto é uma API que recomenda playlists de acordo com a temperatura de determinada localidade.
 
-[![NPM Version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
-
-
 
 ## Instalação
 
