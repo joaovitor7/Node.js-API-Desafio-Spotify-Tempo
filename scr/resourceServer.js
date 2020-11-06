@@ -4,9 +4,13 @@ const app = express()
 const {weather, weatherLatLong}  = require('../utils/weather')
 const spotify = require('../utils/spotify')
 const authenticateToken = require('../utils/authenticateToken')
+const helmet = require('helmet')
+const morgan = require('morgan')
 
 const {SERVER_PORT_RESOURCE} = process.env
 
+app.use(helmet())
+app.use(morgan('tiny'))
 app.use(express.json())
 
 app.get('/',authenticateToken, (req,res) => {
